@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Doqi - Sistema Web",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Doqi - Sistema Web"
+	}
+}
