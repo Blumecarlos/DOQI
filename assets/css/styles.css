@@ -24,47 +24,6 @@ body{
   grid-template-columns: auto 1fr;
 }
 
-.btn-download{
-  background: #fff;
-  color: #11121a;
-  border: none;
-  position: relative;
-  height: 22px;
-  font-size: 1.0em;
-  padding: 0 2em;
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-  margin-left: 10px;
-  display: flex;
-  top: -22px;
-}
-.btn-download:hover{
-  background:#11121a;
-  color:#fff;
-}
-.btn-download:before,.btn-download:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #5e63ff;
-  transition:400ms ease all;
-}
-.btn-download:after{
-  right:inherit;
-  top:21px;
-  left:0;
-  bottom:0;
-}
-.btn-download:hover:before,.btn-download:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-
 #sidebar{
   box-sizing: border-box;
   height: 100vh;
@@ -258,3 +217,5 @@ main p{
   }
 }
 /**/
+
+
