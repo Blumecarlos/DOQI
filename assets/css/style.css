@@ -189,7 +189,8 @@
   }
   
   .display-1 {
-    font-size: var(--fontSize-display-1);
+    margin-top: -20px;
+    font-size: 80px;
     line-height: var(--lineHeight-1);
   }
   
@@ -224,7 +225,7 @@
   
   .label-1 { font-size: var(--fontSize-label-1); }
   
-  .label-2 { font-size: var(--fontSize-label-2); }
+  .label-2 { font-size: large; }
   
   
   /*-----------------------------------*\
@@ -1168,7 +1169,7 @@
   }
   
   .footer-link {
-    margin-top: 20px;
+    margin-top: 15px;
     color: white;
     font-weight: var(--weight-bold);
     text-transform: uppercase;
