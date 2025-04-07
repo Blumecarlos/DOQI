@@ -5,7 +5,7 @@
 /**
  * PRELOAD
  * 
- * loading will be end after document is loaded
+ * após o documento ser carregado o processo finaliza.
  */
 
 const preloader = document.querySelector("[data-preaload]");
@@ -18,7 +18,7 @@ window.addEventListener("load", function () {
 
 
 /**
- * add event listener on multiple elements
+ * adiciona lista de eventos em vários elementos
  */
 
 const addEventOnElements = function (elements, eventType, callback) {
@@ -123,7 +123,7 @@ const slidePrev = function () {
 heroSliderPrevBtn.addEventListener("click", slidePrev);
 
 /**
- * auto slide
+ * slide automatico
  */
 
 let autoSlideInterval;
