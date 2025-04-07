@@ -61,7 +61,7 @@
     --lineHeight-5: 1.85em;
     --lineHeight-6: 1.4em;
   
-    /* letter-spacing */
+    /* Espaço das letras */
     --letterSpacing-1: 0.15em;
     --letterSpacing-2: 0.4em;
     --letterSpacing-3: 0.2em;
@@ -69,7 +69,7 @@
     --letterSpacing-5: 3px;
   
     /**
-     * SPACING
+     * Espaço
      */
   
     --section-space: 70px;
@@ -77,18 +77,18 @@
     /**
      * SHADOW
      */
-  
+
     --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
   
     /**
-     * BORDER RADIUS
+     * Border Radius
      */
   
     --radius-24: 24px;
     --radius-circle: 50%;
   
     /**
-     * TRANSITION
+     * Transição
      */
   
     --transition-1: 250ms ease;
@@ -229,7 +229,7 @@
   
   
   /*-----------------------------------*\
-    #REUSED STYLE
+    #Reutilizar estilo
   \*-----------------------------------*/
   
   .container { padding-inline: 16px; }
@@ -548,20 +548,15 @@
     100% { background-position: 0%; }
   }
   
-  
-  
-  
-  
+
   /*-----------------------------------*\
-    #TOPBAR
+    #TOP-BAR
   \*-----------------------------------*/
   
   .topbar { display: none; }
   
-  
-  
-  
-  
+
+
   /*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
@@ -734,10 +729,6 @@
     pointer-events: all;
   }
   
-  
-  
-  
-  
   /*-----------------------------------*\
     #HERO
   \*-----------------------------------*/
@@ -860,12 +851,8 @@
   
   .hero .slider-item.active .btn { animation-delay: 2s; }
   
-  
-  
-  
-  
   /*-----------------------------------*\
-    #SERVICE
+    #serviços
   \*-----------------------------------*/
   
   .service .section-title { margin-block-end: 16px; }
@@ -907,12 +894,8 @@
   
   .service .card-title { margin-block-end: 12px; }
   
-  
-  
-  
-  
   /*-----------------------------------*\
-    #ABOUT
+    #DOQI
   \*-----------------------------------*/
   
   .about .section-text { margin-block: 15px 30px; }
@@ -1048,7 +1031,7 @@
   }
  
   /*-----------------------------------*\
-    #EVENT
+    #Eventos
   \*-----------------------------------*/
   
   .event .section-title { margin-block-end: 40px; }
@@ -1095,12 +1078,8 @@
     margin-block-start: 40px;
   }
   
-  
-  
-  
-  
   /*-----------------------------------*\
-    #FOOTER
+    #Links(caso precise usar)
   \*-----------------------------------*/
   
   .footer-top { margin-block-end: 70px; }
@@ -1191,10 +1170,6 @@
     text-decoration: underline;
   }
   
-  
-  
-  
-  
   /*-----------------------------------*\
     #BACK TO TOP
   \*-----------------------------------*/
@@ -1228,23 +1203,13 @@
     visibility: visible;
   }
   
-  
-  
-  
-  
   /*-----------------------------------*\
-    #MEDIA QUERIES
+    #MEDIA (telas dinâmicas)
   \*-----------------------------------*/
   
-  /**
-   * responsive for larger than 575px screen
-   */
   
   @media (min-width: 575px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
   
     :root {
   
@@ -1256,10 +1221,8 @@
   
     }
   
-  
-  
     /**
-     * REUSED STYLE
+     * Reutilização do código
      */
   
     :is(.service, .about) .section-text {
@@ -1268,8 +1231,6 @@
     }
   
     .contact-number { --fontSize-body-1: 3rem; }
-  
-  
   
     /**
      * TOPBAR
@@ -1313,8 +1274,6 @@
   
     .topbar .link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
   
-  
-  
     /**
      * HEADER
      */
@@ -1328,29 +1287,23 @@
       margin-inline-start: auto;
     }
   
-  
-  
     /**
      * HERO
      */
   
     .hero-btn { transform: scale(0.7); }
   
-  
-  
     /**
-     * SERVICE
+     * Serviço
      */
   
     .service .container {
       max-width: 420px;
       margin-inline: auto;
     }
-  
-  
-  
+
     /**
-     * ABOUT
+     * Doqi
      */
   
     .about .container { gap: 80px; }
@@ -1360,8 +1313,6 @@
     .about .abs-img-1 { width: 285px; }
   
     .about .contact-number { --fontSize-body-1: 2.4rem; }
-  
-  
   
     /**
      * MENU
@@ -1391,21 +1342,17 @@
       border-block: 1px solid var(--white-alpha-20);
     }
   
-  
-  
     /**
-     * EVENT
+     * EVENTOS
      */
   
     .event .container {
       max-width: 420px;
       margin-inline: auto;
     }
-  
-  
-  
+   
     /**
-     * FOOTER
+     * Links
      */
   
     .footer-brand > * {
@@ -1430,18 +1377,14 @@
   
   }
   
-  
-  
-  
-  
   /**
-   * responsive for larger than 768px screen
+   * 
    */
   
   @media (min-width: 768px) {
   
     /**
-     * REUSED STYLE
+     * estilo reutilizado
      */
   
     .grid-list { grid-template-columns: 1fr 1fr; }
@@ -1454,16 +1397,12 @@
       margin-inline: auto;
     }
   
-  
-  
     /**
      * HEADER
      */
   
     .navbar-list { margin-inline: 30px; }
-  
-  
-  
+    
     /**
      * HERO
      */
@@ -1495,11 +1434,6 @@
     }
   
   
-  
-    /**
-     * RESERVATION
-     */
-  
     .reservation .input-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1511,9 +1445,8 @@
     }
   
   
-  
     /**
-     * FOOTER
+     * links
      */
   
     .footer-brand { grid-column: 1 / 3; }
@@ -1521,12 +1454,6 @@
   }
   
   
-  
-  
-  
-  /**
-   * responsive for larger than 992px screen
-   */
   
   @media (min-width: 992px) {
   
@@ -1537,17 +1464,15 @@
     :root {
   
       /**
-       * spacing
+       * espaços
        */
   
       --section-space: 100px;
   
     }
   
-  
-  
     /**
-     * REUSED STYLE
+     * estilo reutilizado
      */
   
     :is(.service, .event) .container { max-width: unset; }
@@ -1559,8 +1484,6 @@
       width: 100%;
     }
   
-  
-  
     /**
      * TOPBAR
      */
@@ -1569,10 +1492,8 @@
   
     .topbar .item-2 { margin-inline-end: auto; }
   
-  
-  
     /**
-     * SERVICE
+     * Serviços
      */
   
     .service .shape { display: block; }
@@ -1587,10 +1508,9 @@
       right: 0;
     }
   
-  
-  
+
     /**
-     * ABOUT
+     * DOQI
      */
   
     .about .container {
@@ -1599,10 +1519,7 @@
     }
   
   
-  
-    /**
-     * SPECIAL DISH
-     */
+ /*--------------------------------------------------------------------*/
   
     .special-dish {
       display: grid;
@@ -1626,8 +1543,6 @@
       animation: move 5s linear infinite;
     }
   
-  
-  
     /**
      * MENU
      */
@@ -1647,31 +1562,18 @@
     }
   
   
-  
-    /**
-     * TESTIMONIALS
-     */
-  
     .testi-text {
       max-width: 910px;
       margin-inline: auto;
     }
   
-  
-  
-    /**
-     * RESERVATION
-     */
-  
     .reservation-form {
       display: grid;
       grid-template-columns: 1fr 0.5fr;
     }
-  
-  
-  
+   
     /**
-     * FOOTER
+     * Links
      */
   
     .footer .grid-list {
@@ -1690,13 +1592,6 @@
   }
   
   
-  
-  
-  
-  /**
-   * responsive for larger than 1200px screen
-   */
-  
   @media (min-width: 1200px) {
   
     /**
@@ -1713,10 +1608,8 @@
   
     }
   
-  
-  
     /**
-     * REUSED STYLE
+     * estilo reutilizado
      */
   
     .container,
@@ -1725,7 +1618,6 @@
       width: 100%;
       margin-inline: auto;
     }
-  
   
   
     /**
@@ -1799,7 +1691,7 @@
   
   
     /**
-     * SERVICE
+     * Serviços
      */
   
     .service .grid-list { gap: 150px; }
@@ -1808,19 +1700,12 @@
   
     .service .section-text { margin-block-end: 75px; }
   
-  
-  
     /**
-     * ABOUT
+     * Doqi
      */
   
     .about { padding-block: 170px 100px; }
   
-  
-  
-    /**
-     * SPECIAL DISH
-     */
   
     .special-dish-content {
       padding: 225px 120px;
@@ -1843,34 +1728,18 @@
       margin-block-end: 55px;
     }
   
-  
-  
-    /**
-     * TESTIMONIALS
-     */
-  
     .form-left,
     .form-right { padding: 75px 60px; }
-  
-  
-  
-  
+
     /**
-     * FEATURES
+     * complementos
      */
   
     .features .grid-list { grid-template-columns: repeat(4, 1fr); }
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 1400px screen
-   */
-  
+
   @media (min-width: 1400px) {
   
     /**
@@ -1882,7 +1751,7 @@
   
   
     /**
-     * ABOUT
+     * doqi
      */
   
     .about-content { padding-inline-end: 90px; }
@@ -1892,12 +1761,7 @@
       top: 46%;
       left: 0;
     }
-  
-  
-  
-    /**
-     * SPECIAL DISH
-     */
+
   
     .special-dish {
       overflow: visible;
@@ -1918,10 +1782,8 @@
       width: max-content;
     }
   
-  
-  
     /**
-     * FEATURES
+     * complementos
      */
   
     .features { overflow: visible; }
