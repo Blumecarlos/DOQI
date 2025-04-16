@@ -298,6 +298,10 @@
     margin-inline: auto;
     margin-block-start: 5px;
   }
+  .btn-aqui{
+    margin-left: -20px;
+    color:hsl(238, 100%, 68%);
+  }
   
   .btn {
     position: relative;
